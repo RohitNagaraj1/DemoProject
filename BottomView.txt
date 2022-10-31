@@ -1,0 +1,15 @@
+BottomView (Treenode root)
+step 1 : create TreeMap <Integer, Integer> map variable
+step 2 : create queue variable to store pair data, where pair is a class which takes treenode and integer data to store
+step 3 : add pair(root, o) data to queue
+step 4 : repeat until queue becomes empty
+         pop element from queue and store it in current variable
+         modify map variable with key as current.index and value as current.node.data
+         if current.node.left not null
+            add (current.node.left, current.index-1) pair to queue
+         if current.node.right not null
+            add (current.node.right, current.index+1) pair to queue
+step 5 : create a set (Set<Map.Entry<Integer, Integer>>) entries from map variable 
+step 6 : create array list result variable to store result
+step 7 : iterate over set entries and assign entry.getValue to arrayList
+step 8 : return result variable

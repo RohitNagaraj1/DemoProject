@@ -1,0 +1,9 @@
+FindMinimum (int[] nums)
+step 1 : assign low = 0 ad high = nums.length-1
+step 2 : repeat low < high
+            assign mid = low + (high-low)/2;
+            check nums[mid] > nums[high]
+                assign low = mid+1
+            else 
+                assign high = mid
+step 3 : return nums[low]

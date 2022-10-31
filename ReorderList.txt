@@ -1,0 +1,19 @@
+ReorderList (head node)
+step 1 : take 2 linkedlist slow, fast, assign slow = head, fast = head.next
+step 2 : while (fast != null && fast.next != null) increment slow by one node, fast by 2 node until fast node become null, to get middle node in slow node
+step 3 : create nextnode as slow.next, assign slow.next = null
+step 5 : reverse nodes stating from next node and assign it in secondList
+step 6 : assign head node to firstList
+step 7 : create new result node
+step 8 : take one node from firstList and one node from secondList and assign that to result linkedlist until firstList or secondList become null
+step 9 : assign remaining nodes to from firstList or secondList to result linkedlist
+step 10 : assign result.next to head node, which contains nodes from firstList stating node
+
+Reverse linkedlist (head node)
+step 1 : create previous node = null
+step 2 : while head != null,
+            next node = head.next
+            head.next = previous
+            previous = head
+            head = next
+step 3 : return previous

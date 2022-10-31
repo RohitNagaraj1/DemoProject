@@ -1,0 +1,12 @@
+LengthOfLongestSubstring(string s)
+step 1 : creat empty string current
+step 2 : assign max = 0
+step 3 : repeat for all the character in a string s
+        create temp string from character
+        check if temp is already present in current string
+        if yes 
+            take the index starting from temp string
+            assign current string = string after temp string 
+        add temp string to current string (current += temp)
+        check length of current string and modify max variable
+step 4 : return max

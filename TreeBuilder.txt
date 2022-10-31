@@ -1,0 +1,16 @@
+TreeBuilder(int[] inorder, int[] preorder, int n)
+step 1 : create Map<Integer, Integer> map variable to store inorder value as key and inorder index as value
+step 2 : iterate over inorder array
+         add map value -> map.put(inorder[i], i);
+step 3 : call helper function -> helper(left = 0, right = n-1, preorder, map)
+
+helper(int left, int right, int[] preorder, Map<Integer, Integer> map)
+step 1 : if left > right
+            return
+step 2 : create rootvalue variable and assign preorder[preindex] value
+            increment preindex value
+step 3 : create TreeNode root variable and assign rootvalue to it
+step 4 : create index variable and get value from map variable based on rootvalue 
+step 5 : call helper(left, index-1, preorder, map) and assign value to root.left
+step 6 : call helper(index+1, right, preorder, map) and assign value to root.right
+step 7 : return root

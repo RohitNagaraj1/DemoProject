@@ -53,7 +53,7 @@ public class CompleteBinaryTree
         root.left.left = cbt.new TreeNode(2);
         root.left.right = cbt.new TreeNode(4);
         root.right.left = cbt.new TreeNode(6);
-        //root.right.right = cbt.new TreeNode(8);
+        root.right.right = cbt.new TreeNode(8);
 
         System.out.println(IsCBT(root));
     }

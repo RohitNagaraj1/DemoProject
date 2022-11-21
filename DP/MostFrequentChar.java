@@ -47,6 +47,8 @@ public class MostFrequentChar {
 
         return max;
     }
+
+    
     public static void main(String[] args) 
     {
         System.out.println(FindMostFrequentVowel("eeeeeee"));
